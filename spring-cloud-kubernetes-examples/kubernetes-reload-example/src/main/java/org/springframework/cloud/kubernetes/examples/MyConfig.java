@@ -21,6 +21,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration(proxyBeanMethods = false)
 @ConfigurationProperties(prefix = "bean")
+@RefreshScope
 public class MyConfig {
 
 	private String message = "a message that can be changed live";
