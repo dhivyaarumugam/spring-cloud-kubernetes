@@ -6,8 +6,9 @@ spring:
       reload:
         enabled: true
         mode: polling
-        period: 5000
+        period: 3000
       config:
+        enabled: true
         sources:
-          - name: other
-          - name: ${spring.application.name}
+          - namespace: default
+            name: ${spring.application.name}
