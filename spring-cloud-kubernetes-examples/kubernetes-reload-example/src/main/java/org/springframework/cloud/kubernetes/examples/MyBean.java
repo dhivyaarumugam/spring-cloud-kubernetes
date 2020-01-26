@@ -29,7 +29,7 @@ public class MyBean {
 	@Autowired
 	private DummyConfig dummyConfig;
 
-	@Scheduled(fixedDelay = 5000)
+	@Scheduled(fixedDelay = 3000)
 	public void hello() {
 		System.out.println("The first message is: " + this.myConfig.getMessage());
 		System.out.println("The other message is: " + this.dummyConfig.getMessage());
